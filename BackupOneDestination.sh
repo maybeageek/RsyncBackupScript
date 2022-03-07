@@ -3,7 +3,7 @@
 # TimeMachine-Like rsync-Backupscript
 # by maybeageek
 #
-# this work is based on the work over at http://blog.interlinked.org/tutorials/rsync_time_machine.html
+# this work is based off on some guys rsync magic and extended. The source webpage is offline now.
 # 
 
 DATE=`date "+%Y-%m-%dT%H_%M_%S"`
