@@ -1,6 +1,8 @@
 # RsyncBackupScript
 this work is based on the work over at http://blog.interlinked.org/tutorials/rsync_time_machine.html
 
+NOTE: Please use the "two Destinations" Version, as the single destination version need to be reworked a little. It works but it does not autodelete old backups and stuff.
+
 This script creates a backup with a date each time it is run. It also deletes backups older then the defined time (see variables).
 It uses links so that each backup folder contains everything, yet a file that has not changed is only physically ONCE on the backup disk.
 This saves tremendous amounts of data. If you delete a file from source, and then your oldest backup containing a copy of the file ages out
