@@ -4,7 +4,7 @@
 # backing up to two different locations.
 # by maybeageek
 #
-# this work is based on the work over at http://blog.interlinked.org/tutorials/rsync_time_machine.html
+# this work is based off on some guys rsync magic and extended. The source webpage is offline now.
 #
 
 DATE=`date "+%Y-%m-%d_%H_%M"`
