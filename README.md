@@ -1,5 +1,5 @@
 # RsyncBackupScript
-this work is based off on some guys rsync magic and extended. The source webpage is offline now.
+this work is based off on some guys rsync magic and extended/reworked and fitted to my purposes. The source webpage is offline now.
 
 NOTE: Please use the "two Destinations" Version, as the single destination version need to be reworked a little. It works but it does not autodelete old backups and stuff.
 
