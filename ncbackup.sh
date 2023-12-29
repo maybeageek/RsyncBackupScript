@@ -42,7 +42,7 @@ echo "Done"
 
 # backup the database from nextcloud
 echo "Backup nextcloud database ..."
-sudo mysqldump --single-transaction --default-character-set=utf8mb4 -h localhost nextcloud > nextcloud-sqlbkp_`date +"%Y%m%d-%H-%M-%S"`.bak
+sudo mysqldump --single-transaction --default-character-set=utf8mb4 -h localhost nextcloud > nextcloud-sqlbkp_`date +"%Y-%m-%d-%H-%M-%S"`.bak
 sudo rsync -avx --delete nextcloud-sqlbkp* ncbackup@172.18.0.20:/tank/ncbackup/nextcloud/
 sudo rm nextcloud-sqlbkp*
 echo "Done"
