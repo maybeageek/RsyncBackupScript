@@ -30,7 +30,7 @@ if test -d $DESTA;
   ln -s back-$DATE $DESTA/current
  
   echo "deleting backups older than CTIME" >> $LOG
-  find $DESTA/back-* -type d -ctime $CTIME -exec rm -rf {} \;
+  find $DESTA/back-* -maxdepth 0 -type d -ctime $CTIME -exec rm -rf {} \;
  
   echo "end backup" >> $LOG
   date "+%Y-%m-%d_%H_%M" >> $LOG
@@ -50,7 +50,7 @@ if test -d $DESTA;
         ln -s back-$DATE $DESTB/current
        
         echo "deleting backups older than 5 days" >> $LOG
-        find $DESTB/back-* -type d -ctime $CTIME -exec rm -rf {} \;
+        find $DESTB/back-* -maxdepth 0 -type d -ctime $CTIME -exec rm -rf {} \;
        
         echo "end backup" >> $LOG
         date "+%Y-%m-%d_%H_%M" >> $LOG
