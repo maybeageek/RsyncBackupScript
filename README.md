@@ -15,4 +15,3 @@ Tipps:
 - "rsync -E" is just for Apple OS X Systems. It keeps the extended attributes. Remove the -E option on Linux and FreeBSD.
 
 # Happy backup :-)
-PUSH3
